@@ -53,7 +53,7 @@ string removeWord(string str , string word){
   int len1 = len(str) , len2 = len(word);
 
   for(int i=0; i<len1;){
-    if(str.substr(i , len2) == word){
+    if(i <= len1 - len2 && str.substr(i , len2) == word){
       i += len2;
     }else{
       newStr += str[i];
