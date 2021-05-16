@@ -42,6 +42,6 @@ void printWordsOccurence(string s) {
             }
         }
         if(arr[i] != "")
-            cout << "[" << counter << "] " << arr[i] << endl;
+        cout << "{ " << counter << " } " << words[i] << endl;
     }
 }
